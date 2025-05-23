@@ -13,6 +13,7 @@
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
+  <link rel="icon" href="data:,">
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -285,25 +286,24 @@
   <div class="container is-max-desktop">
     <!-- Method -->
     <div style="text-align:center">
-      <h2 class="title is-3">Data & Environment Preparation</h2>
+      <h2 class="title is-3">Proposed Method: Inside</h2>
+    </div>
+    <br>
+    <br>
+    <div class="columns is-centered">
+      <figure>
+        <img src="static/images/method.png" alt="Figure 1" style="width:100%; display:block; margin:0 auto;">
+      </figure>
     </div>
     <div class="content has-text-justified">
+      <div style="text-align:center">
+        <h2 class="title is-size-6">Overview of Inside architecture </h2>
+      </div>
       <br>
       <p>
-        We present a graph-based intent-semantic joint modeling method, named Inside, which bridges thoughts and words for fake news detection.
-        Specifically, for semantic modeling, we split the news into sentences and introduce involved entities to formulate a semantic heterogeneous graph.
-        The benefit is that we can explicitly model the specific dependencies via concatenated edges between sentence and entity nodes.
-        Accordingly, Inside applies sliding window-based interaction for local sentence structures while leveraging entity connections for long-distance context interaction.
-        For intent modeling, Inside utilizes large language models (LLMs) to extract unstructured news intents, expanding the intent representation space beyond fixed classifications. 
-        Additionally, considering the importance of intent implementation, {\em i.e.}, how intent is expressed through news narrative in the context of fake news detection, we develop a coarse-to-fine news intent modeling strategy to enhance the correlation between intent and news narrative characteristics.
-        Besides, to extract representations from semantic and intent signals, Inside performs dual-level graph updating for both semantic and intent graphs, enabling information exchange at local and global levels.
-        For cross-signal integration, Inside proposes a dynamic pathway-based alignment module with pseudo nodes to bridge the semantic-intent gap through bidirectional message passing and aggregation, ultimately yielding effective representations for fake news detection.
+        Given a news item, Inside leverages heterogeneous graph structures to represent the news semantics and intent (a-b). 
+    After obtaining the encoded semantic and intent representations via dual-level graph updating (c), a dynamic pathway-based graph alignment strategy is utilized to enable cross-signal alignment within a common space (d). The illustrative intent analysis framework is provided as an example and can be replaced with alternative ones.
       </p>
-    </div>
-    <div class="columns is-centered">
-        <figure>
-          <img src="static/images/method.png" alt="Figure 1" style="width:60%; display:block; margin:0 auto;">
-        </figure>
     </div>
     <br>
     <br>
@@ -325,9 +325,8 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
